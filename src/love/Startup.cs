@@ -43,7 +43,7 @@ namespace love
             {
                 routes.MapRoute(
                     name: "default",
-                    template: "{controller=Home}/{action=Index}/{id?}");
+                    template: "{controller=AyWpp}/{action=Love}/{id?}");
             });
         }
     }
