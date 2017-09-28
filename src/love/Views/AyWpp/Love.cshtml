@@ -12,7 +12,8 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Nuptial &mdash; 100% Free Fully Responsive HTML5 Template by FREEHTML5.co</title>
+    <title>MyLove</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
     <link rel="shortcut icon" href="favicon.ico">
@@ -23,7 +24,7 @@
     <!-- Animate.css -->
     <link rel="stylesheet" href="/css/animate.css">
     <!-- Icomoon Icon Fonts-->
-    <link rel="stylesheet" href="css/icomoon.css">
+    <link rel="stylesheet" href="/css/icomoon.css">
     <!-- Bootstrap  -->
     <link rel="stylesheet" href="/css/bootstrap.css">
     <!-- Superfish -->
@@ -33,17 +34,46 @@
 
     <link rel="stylesheet" href="/css/style.css">
 
+    <style type="text/css">
+        body, html, #allmap {
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            font-family: "微软雅黑";
+            font-size: 14px;
+        }
 
+        #l-map {
+            height: 500px;
+            width: 100%;
+        }
 
-
+        #r-result {
+            width: 100%;
+        }
+        .anchorBL {
+            display: none;
+        }
+    </style>
+    <!-- Modernizr JS -->
+    <script src="~/js/modernizr-2.6.2.min.js"></script>
+    <!-- FOR IE9 below -->
+    <!--[if lt IE 9]>
+    <script src="/js/respond.min.js"></script>
+    <![endif]-->
+    <script type="text/javascript" src="http://api.map.baidu.com/getscript?v=2.0&ak=CVMFljg45uXTKbbNX3xC84PG6F7mHTb0"></script>
 </head>
+
 <body>
+    <div class="btn-audio">
+        <audio src="http://mylove.twad.club/Heartbeats.mp3" loop  />
+    </div>
     <div id="fh5co-wrapper">
         <div id="fh5co-page">
 
             <div class="fh5co-hero" data-section="home">
                 <div class="fh5co-overlay"></div>
-                <div class="fh5co-cover text-center" data-stellar-background-ratio="0.5" style="background-image: url(images/cover_bg_1.jpg);">
+                <div class="fh5co-cover text-center" data-stellar-background-ratio="0.5" style="background-image: url(http://mylove.twad.club/mylove-2.jpg/mylove.banner);">
                     <div class="display-t">
                         <div class="display-tc">
                             <div class="container">
@@ -100,21 +130,21 @@
                     <div class="row">
                         <div class="col-md-4">
                             <div class="gallery animate-box">
-                                <a class="gallery-img image-popup image-popup" href="images/gallery-1.jpg"><img src="images/gallery-1.jpg" class="img-responsive" alt="Free HTML5 Bootstrap Template by FreeHTML5.co"></a>
+                                <a class="gallery-img image-popup image-popup" href="http://mylove.twad.club/mylove-1.jpg/mylove"><img src="http://mylove.twad.club/mylove-1.jpg/mylove" class="img-responsive" alt="Free HTML5 Bootstrap Template by FreeHTML5.co"></a>
                             </div>
                             <div class="gallery animate-box">
-                                <a class="gallery-img image-popup" href="images/gallery-7.jpg"><img src="images/gallery-7.jpg" class="img-responsive" alt="Free HTML5 Bootstrap Template by FreeHTML5.co"></a>
+                                <a class="gallery-img image-popup" href="http://mylove.twad.club/mylove-4.jpg/mylove"><img src="http://mylove.twad.club/mylove-4.jpg/mylove" class="img-responsive" alt="Free HTML5 Bootstrap Template by FreeHTML5.co"></a>
                             </div>
                         </div>
                         <div class="col-md-4">
                             <div class="gallery animate-box">
-                                <a class="gallery-img image-popup" href="images/gallery-6.jpg"><img src="images/gallery-6.jpg" class="img-responsive" alt="Free HTML5 Bootstrap Template by FreeHTML5.co"></a>
+                                <a class="gallery-img image-popup" href="http://mylove.twad.club/mylove-6.jpg/mylove"><img src="http://mylove.twad.club/mylove-6.jpg/mylove" class="img-responsive" alt="Free HTML5 Bootstrap Template by FreeHTML5.co"></a>
                             </div>
                             <div class="gallery animate-box">
-                                <a class="gallery-img image-popup" href="images/gallery-2.jpg"><img src="images/gallery-2.jpg" class="img-responsive" alt="Free HTML5 Bootstrap Template by FreeHTML5.co"></a>
+                                <a class="gallery-img image-popup" href="http://mylove.twad.club/mylove-8.jpg/mylove"><img src="http://mylove.twad.club/mylove-8.jpg/mylove" class="img-responsive" alt="Free HTML5 Bootstrap Template by FreeHTML5.co"></a>
                             </div>
                             <div class="gallery animate-box">
-                                <a class="gallery-img image-popup" href="images/gallery-5.jpg"><img src="images/gallery-5.jpg" class="img-responsive" alt="Free HTML5 Bootstrap Template by FreeHTML5.co"></a>
+                                <a class="gallery-img image-popup" href="http://mylove.twad.club/mylove-5.jpg/mylove"><img src="http://mylove.twad.club/mylove-5.jpg/mylove" class="img-responsive" alt="Free HTML5 Bootstrap Template by FreeHTML5.co"></a>
                             </div>
                         </div>
                         <div class="col-md-4">
@@ -129,37 +159,8 @@
                 </div>
             </div>
 
-            <div id="fh5co-started" style="background-image:url(images/cover_bg_2.jpg);" data-stellar-background-ratio="0.5">
-                <div class="overlay"></div>
-                <div class="container">
-                    <div class="row animate-box">
-                        <div class="col-md-8 col-md-offset-2 text-center heading-section">
-                            <h2>Are You Attending?</h2>
-                            <p>Please Fill-up the form to notify you that you're attending. Thanks.
-                        </div>
-                    </div>
-                    <div class="row animate-box">
-                        <div class="col-md-10 col-md-offset-1">
-                            <form class="form-inline">
-                                <div class="col-md-4 col-sm-4">
-                                    <div class="form-group">
-                                        <label for="name" class="sr-only">Name</label>
-                                        <input type="name" class="form-control" id="name" placeholder="Name">
-                                    </div>
-                                </div>
-                                <div class="col-md-4 col-sm-4">
-                                    <div class="form-group">
-                                        <label for="email" class="sr-only">Email</label>
-                                        <input type="email" class="form-control" id="email" placeholder="Email">
-                                    </div>
-                                </div>
-                                <div class="col-md-4 col-sm-4">
-                                    <button type="submit" class="btn btn-primary btn-block">I am Attending</button>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                </div>
+            <div id="fh5co-started" data-stellar-background-ratio="0.5">
+                <div id="l-map"></div>
             </div>
 
             <footer>
@@ -167,17 +168,11 @@
                     <div class="container">
                         <div class="row">
                             <div class="col-md-12 text-center">
-                                <h2>Jack &amp; Rose</h2>
+                                <h2>艾勇 &amp;王萍萍</h2>
                             </div>
                             <div class="col-md-6 col-md-offset-3 text-center">
-                                <p class="fh5co-social-icons">
-                                    <a href="#"><i class="icon-twitter2"></i></a>
-                                    <a href="#"><i class="icon-facebook2"></i></a>
-                                    <a href="#"><i class="icon-instagram"></i></a>
-                                    <a href="#"><i class="icon-dribbble2"></i></a>
-                                    <a href="#"><i class="icon-youtube"></i></a>
-                                </p>
-                                <p>Copyright 2016 Free Html5 <a href="#">Module</a>. All Rights Reserved. <br>More Templates <a href="http://www.cssmoban.com/" target="_blank" title="模板之家">模板之家</a> - Collect from <a href="http://www.cssmoban.com/" title="网页模板" target="_blank">网页模板</a></p>
+
+                                <p><a href="http://www.miitbeian.gov.cn/publish/query/indexFirst.action">鄂ICP备15019015号-1</a></p>
                             </div>
                         </div>
                     </div>
@@ -188,7 +183,6 @@
 
     </div>
     <!-- END fh5co-wrapper -->
-
     <!-- jQuery -->
     <script src="~/js/scripts.min.js"></script>
 
@@ -196,3 +190,16 @@
 
 
 </html>
+<script type="text/javascript">
+    // 百度地图API功能
+    var sContent = "天桥康城一楼，老乡村(碧山路店)一楼大厅";
+    var map = new BMap.Map("l-map");
+    map.addControl(new BMap.NavigationControl());
+    map.addControl(new BMap.ScaleControl());    
+    var point = new BMap.Point(113.7055356737, 31.2638181151);
+    map.centerAndZoom(point, 18);
+    var marker = new BMap.Marker(point);  // 创建标注
+    map.addOverlay(marker);   
+    var infoWindow = new BMap.InfoWindow(sContent);  // 创建信息窗口对象
+    map.openInfoWindow(infoWindow, point); //开启信息窗口
+</script>
